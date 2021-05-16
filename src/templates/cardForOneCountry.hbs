@@ -1,12 +1,19 @@
-<h1>{{name}}</h1>
-<p>Capital: {{capital}}</p>
-<p>Population: {{population}}</p>
-<p>Languages: </p>
-<ul>
-    {{#each languages}}
-    
-        <li>{{language.name}}</li>
-    </ul>
-    {{/each}}
+<h1 class='title'>{{name}}</h1>
+<div class="form-country">
+    <div class="card">
+        <p><span class="text">Capital:</span> {{capital}}</p>
+        <p>
+            <shan class="text">Population:</shan> {{population}}
+        </p>
+        <p>
+            <shan class="text">Languages:</shan>
+        </p>
+        <ul>
+            {{#each languages}}
+            <li class="tag-list__item">{{name}}</li>
+            {{/each}}
+        </ul>
+    </div>
 
-<img src="https://{{flag}}" alt='{{name}}'/>
+    <img src="{{flag}}" alt='{{name}}' width="600" , height="300" />
+</div>
