@@ -19,7 +19,7 @@ function onSearch(e) {
   clearContainer();
   const searchQuery = e.target.value;
 
-  if (searchQuery === 0) {
+  if (!searchQuery) {
     return;
   } else {
     API.fetchCountries(searchQuery)
